@@ -16,4 +16,14 @@
 
 @property (strong, nonatomic) ViewController *viewController;
 
+@property BOOL fastRecognition;
+@property BOOL gradientTeaching;
+@property BOOL regionsMetrics;
+@property BOOL trainingWithTeacher;
+@property BOOL statisticsCollection;
+
+@property double trainCoefficient;
+@property int regionSquareThresholdValue;
+@property double formCoefficientAffection;
+
 @end

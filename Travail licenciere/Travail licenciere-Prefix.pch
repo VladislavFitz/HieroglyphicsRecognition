@@ -3,6 +3,7 @@
 //
 
 #import <Availability.h>
+#import "AppDelegate.h"
 
 #ifndef __IPHONE_4_0
 #warning "This project uses features only available in iOS SDK 4.0 and later."
@@ -12,3 +13,87 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+
+
+#define VECTORLENGTH 10000
+
+#define PIXELS_IN_ROW 100
+#define PIXELS_IN_COLUMN 100
+#define PIXELS_IN_HALFROW 50
+#define PIXELS_IN_HALFCOLUMN 50
+#define PIXELS_IN_THIRDROW 33
+
+#define FIRST_PIXEL_OF_ROW 0
+#define LAST_PIXEL_OF_ROW 99
+
+#define LAST_PIXEL_OF_FIRST_HALFROW 49
+#define FIRST_PIXEL_OF_SECOND_HALFROW 50
+
+#define FIRST_PIXEL_OF_FIRST_THIRDROW 0
+#define LAST_PIXEL_OF_FIRST_THIRDROW 33
+
+#define FIRST_PIXEL_OF_SECOND_THIRDROW 20
+#define LAST_PIXEL_OF_SECOND_THIRDROW 80
+
+#define FIRST_PIXEL_OF_THIRD_THIRDROW 67
+#define LAST_PIXEL_OF_THIRD_THIRDROW 99
+
+#define FIRST_PIXEL_OF_SECOND_HORIZONTAL_HALF 5000
+#define FIRST_PIXEL_OF_SECOND_HORIZONTAL_THIRD 2000
+#define FIRST_PIXEL_OF_THIRD_HORIZONTAL_THIRD 8000
+
+
+/*
+ #define PIXELS_IN_ROW 100
+ #define PIXELS_IN_COLUMN 100
+ #define PIXELS_IN_HALFROW 50
+ #define PIXELS_IN_THIRDROW 33
+ 
+ #define FIRST_PIXEL_OF_ROW 0
+ #define LAST_PIXEL_OF_ROW 99
+ 
+ #define LAST_PIXEL_OF_FIRST_HALFROW 49
+ #define FIRST_PIXEL_OF_SECOND_HALFROW 50
+ 
+ #define FIRST_PIXEL_OF_FIRST_THIRDROW 0
+ #define LAST_PIXEL_OF_FIRST_THIRDROW 33
+ 
+ #define FIRST_PIXEL_OF_SECOND_THIRDROW 34
+ #define LAST_PIXEL_OF_SECOND_THIRDROW 66
+ 
+ #define FIRST_PIXEL_OF_THIRD_THIRDROW 67
+ #define LAST_PIXEL_OF_THIRD_THIRDROW 99
+ 
+ #define FIRST_PIXEL_OF_SECOND_HORIZONTAL_HALF 5000
+ #define FIRST_PIXEL_OF_SECOND_HORIZONTAL_THIRD 2000
+ #define FIRST_PIXEL_OF_THIRD_HORIZONTAL_THIRD 8000
+ */
+
+
+#define NUMBER_OF_PATTERNS 7
+
+#define WHITE_PIXEL 255
+
+#define NEURON_ID_KEY @"NeuronID"
+#define NEURON_WEIGHT_KEY @"Weight"
+
+#define ASI @"ASI"
+#define HEN @"HEN"
+#define NE  @"NE"
+#define CUKURI @"CUKURI"
+#define KAMMURI @"KAMMURI"
+#define TARE @"TARE"
+#define KAMAE @"KAMAE"
+
+typedef enum {
+    kASI,
+    kHEN,
+    kNE,
+    kCUKURI,
+    kKAMMURI,
+    kTARE,
+    kKAMAE}
+KeyPosition;
+
+

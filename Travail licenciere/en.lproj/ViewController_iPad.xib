@@ -1,121 +1,584 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<archive type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="8.00">
-	<data>
-		<int key="IBDocument.SystemTarget">1536</int>
-		<string key="IBDocument.SystemVersion">12A206j</string>
-		<string key="IBDocument.InterfaceBuilderVersion">2519</string>
-		<string key="IBDocument.AppKitVersion">1172.1</string>
-		<string key="IBDocument.HIToolboxVersion">613.00</string>
-		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
-			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			<string key="NS.object.0">1856</string>
-		</object>
-		<array key="IBDocument.IntegratedClassDependencies">
-			<string>IBProxyObject</string>
-			<string>IBUIView</string>
-		</array>
-		<array key="IBDocument.PluginDependencies">
-			<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-		</array>
-		<object class="NSMutableDictionary" key="IBDocument.Metadata">
-			<string key="NS.key.0">PluginDependencyRecalculationVersion</string>
-			<integer value="1" key="NS.object.0"/>
-		</object>
-		<array class="NSMutableArray" key="IBDocument.RootObjects" id="1000">
-			<object class="IBProxyObject" id="841351856">
-				<string key="IBProxiedObjectIdentifier">IBFilesOwner</string>
-				<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-			</object>
-			<object class="IBProxyObject" id="606714003">
-				<string key="IBProxiedObjectIdentifier">IBFirstResponder</string>
-				<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-			</object>
-			<object class="IBUIView" id="766721923">
-				<reference key="NSNextResponder"/>
-				<int key="NSvFlags">274</int>
-				<string key="NSFrame">{{0, 20}, {768, 1004}}</string>
-				<reference key="NSSuperview"/>
-				<reference key="NSWindow"/>
-				<object class="NSColor" key="IBUIBackgroundColor">
-					<int key="NSColorSpace">3</int>
-					<bytes key="NSWhite">MQA</bytes>
-					<object class="NSColorSpace" key="NSCustomColorSpace">
-						<int key="NSID">2</int>
-					</object>
-				</object>
-				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics">
-					<int key="IBUIStatusBarStyle">2</int>
-				</object>
-				<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-			</object>
-		</array>
-		<object class="IBObjectContainer" key="IBDocument.Objects">
-			<array class="NSMutableArray" key="connectionRecords">
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">view</string>
-						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="766721923"/>
-					</object>
-					<int key="connectionID">3</int>
-				</object>
-			</array>
-			<object class="IBMutableOrderedSet" key="objectRecords">
-				<array key="orderedObjects">
-					<object class="IBObjectRecord">
-						<int key="objectID">0</int>
-						<array key="object" id="0"/>
-						<reference key="children" ref="1000"/>
-						<nil key="parent"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">-1</int>
-						<reference key="object" ref="841351856"/>
-						<reference key="parent" ref="0"/>
-						<string key="objectName">File's Owner</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">-2</int>
-						<reference key="object" ref="606714003"/>
-						<reference key="parent" ref="0"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">2</int>
-						<reference key="object" ref="766721923"/>
-						<reference key="parent" ref="0"/>
-					</object>
-				</array>
-			</object>
-			<dictionary class="NSMutableDictionary" key="flattenedProperties">
-				<string key="-1.CustomClassName">ViewController</string>
-				<string key="-1.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="-2.CustomClassName">UIResponder</string>
-				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			</dictionary>
-			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
-			<nil key="activeLocalization"/>
-			<dictionary class="NSMutableDictionary" key="localizations"/>
-			<nil key="sourceID"/>
-			<int key="maxID">3</int>
-		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes">
-			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
-				<object class="IBPartialClassDescription">
-					<string key="className">ViewController</string>
-					<string key="superclassName">UIViewController</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/ViewController.h</string>
-					</object>
-				</object>
-			</array>
-		</object>
-		<int key="IBDocument.localizationMode">0</int>
-		<string key="IBDocument.TargetRuntimeIdentifier">IBIPadFramework</string>
-		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
-		<int key="IBDocument.defaultPropertyAccessControl">3</int>
-		<bool key="IBDocument.UseAutolayout">YES</bool>
-		<string key="IBCocoaTouchPluginVersion">1856</string>
-	</data>
-</archive>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="accuracyLabel" destination="1599" id="1645"/>
+                <outlet property="customHyerogliphsEnumerator" destination="1394" id="1467"/>
+                <outlet property="formCoefficientAffectionLabel" destination="2144" id="2170"/>
+                <outlet property="formCoefficientAffectionSlider" destination="2134" id="2169"/>
+                <outlet property="formCoefficientAffectionSliderLabel" destination="2251" id="2297"/>
+                <outlet property="hyerigliphRecognitionChecker" destination="923" id="1387"/>
+                <outlet property="hyerogliphPicker" destination="105" id="256"/>
+                <outlet property="hyerogliphWeightsTable" destination="485" id="499"/>
+                <outlet property="inputHyerogliphImage" destination="4" id="261"/>
+                <outlet property="inputRegionFormCoefficientLabel" destination="2184" id="2191"/>
+                <outlet property="keyRecognitionChecker" destination="1377" id="1386"/>
+                <outlet property="keyRegionFormCoefficientLabel" destination="2179" id="2192"/>
+                <outlet property="keyWeightsTable" destination="503" id="524"/>
+                <outlet property="patternImage" destination="1667" id="1681"/>
+                <outlet property="recognizedHyerogliphImage" destination="33" id="288"/>
+                <outlet property="recognizedHyerogliphLabel" destination="796" id="922"/>
+                <outlet property="recognizedMainKey" destination="262" id="287"/>
+                <outlet property="recognizedMainKeyLabel" destination="785" id="921"/>
+                <outlet property="regionInputSquareLabel" destination="2211" id="2232"/>
+                <outlet property="regionInputSwitcher" destination="1893" id="1939"/>
+                <outlet property="regionKeySquareLabel" destination="2221" id="2233"/>
+                <outlet property="regionKeySwitcher" destination="1930" id="1938"/>
+                <outlet property="regionSquareThreshold" destination="2083" id="2116"/>
+                <outlet property="regionSquareThresholdLabel" destination="2088" id="2117"/>
+                <outlet property="regionSquareThresholdSliderLabel" destination="2242" id="2298"/>
+                <outlet property="trainCoefficientLabel" destination="1548" id="1564"/>
+                <outlet property="trainCoefficientSlider" destination="1947" id="2082"/>
+                <outlet property="view" destination="2" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="342" userLabel="Background Button 1" colorLabel="IBBuiltInLabel-Yellow">
+                    <rect key="frame" x="45" y="329" width="189" height="113"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="189" id="738"/>
+                        <constraint firstAttribute="height" constant="113" id="2447"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="changeInputImageView:" destination="-1" eventType="touchUpInside" id="1688"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="360" userLabel="Background Button 2">
+                    <rect key="frame" x="286" y="329" width="192" height="114"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="192" id="1993"/>
+                        <constraint firstAttribute="height" constant="114" id="2446"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="changeKeyView:" destination="-1" eventType="touchUpInside" id="1665"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="367" userLabel="Background Button 3">
+                    <rect key="frame" x="538" y="329" width="192" height="113"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="192" id="2502"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="changeHyerogliphView:" destination="-1" eventType="touchUpInside" id="1666"/>
+                    </connections>
+                </button>
+                <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="4" userLabel="Input Image">
+                    <rect key="frame" x="90" y="336" width="100" height="100"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="182"/>
+                        <constraint firstAttribute="height" constant="100" id="2441"/>
+                    </constraints>
+                </imageView>
+                <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="33" userLabel="Result Image">
+                    <rect key="frame" x="584" y="336" width="100" height="100"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="1390"/>
+                    </constraints>
+                </imageView>
+                <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="262" userLabel="Key Image">
+                    <rect key="frame" x="332" y="336" width="100" height="100"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="263"/>
+                    </constraints>
+                </imageView>
+                <pickerView tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="105" userLabel="Hyerogliph Picker">
+                    <rect key="frame" x="0.0" y="66" width="768" height="216"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                </pickerView>
+                <navigationBar contentMode="scaleToFill" horizontalHuggingPriority="222" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="163">
+                    <rect key="frame" x="0.0" y="20" width="768" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="contentStretch" x="0.0" y="0.15000000000000002" width="1" height="1"/>
+                    <textAttributes key="titleTextAttributes">
+                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
+                    </textAttributes>
+                    <items>
+                        <navigationItem title="Hyeroglyph recognition alpha" id="164">
+                            <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="1874">
+                                <connections>
+                                    <action selector="resetStatistics:" destination="-1" id="2342"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem key="rightBarButtonItem" systemItem="compose" id="1356">
+                                <connections>
+                                    <action selector="settingsButtonClicked:" destination="-1" id="1357"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Key" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="211" userLabel="Key Label">
+                    <rect key="frame" x="160" y="71" width="30" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Pattern" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="214" userLabel="Pattern Label">
+                    <rect key="frame" x="354" y="71" width="56" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="223" userLabel="Number Label">
+                    <rect key="frame" x="601" y="71" width="62" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="➭" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="289" userLabel="Arrow Label 1">
+                    <rect key="frame" x="242" y="371" width="49" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="298"/>
+                        <constraint firstAttribute="width" constant="49" id="299"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="➭" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="301" userLabel="Arrow Label 2">
+                    <rect key="frame" x="486" y="369" width="49" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="49" id="334"/>
+                        <constraint firstAttribute="height" constant="33" id="2428"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Исходный иероглиф" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="310" userLabel="Inpur Hyerogliph Label">
+                    <rect key="frame" x="62" y="299" width="140" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="1009"/>
+                        <constraint firstAttribute="height" constant="21" id="1740"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Accuracy: 100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1599" userLabel="Inpur Hyerogliph Label">
+                    <rect key="frame" x="53" y="31" width="114" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="114" id="2238"/>
+                        <constraint firstAttribute="height" constant="21" id="2239"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Ключ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="316" userLabel="Recognized Key Label">
+                    <rect key="frame" x="364" y="299" width="40" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0.3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1548" userLabel="Recognized Key Label">
+                    <rect key="frame" x="727" y="524" width="41" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="41" id="1559"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Распознанный иероглиф" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="323" userLabel="Recognized Hyerogliph Label">
+                    <rect key="frame" x="550" y="299" width="168" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="168" id="1050"/>
+                        <constraint firstAttribute="height" constant="22" id="2003"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" tag="2" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="485" userLabel="Hyerogliph Weights Table">
+                    <rect key="frame" x="401" y="603" width="350" height="250"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="350" id="1311"/>
+                        <constraint firstAttribute="height" constant="250" id="2316"/>
+                    </constraints>
+                </tableView>
+                <tableView clipsSubviews="YES" tag="1" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="503" userLabel="Key Weights Table">
+                    <rect key="frame" x="20" y="603" width="350" height="361"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="350" id="1308"/>
+                        <constraint firstAttribute="height" constant="361" id="1449"/>
+                    </constraints>
+                </tableView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Меры отклонения для ключей" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="525" userLabel="Key Weights Label">
+                    <rect key="frame" x="74" y="574" width="243" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Меры отклонения для иероглифов" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="530" userLabel="Hyerogliph Weights Label">
+                    <rect key="frame" x="438" y="574" width="282" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="785" userLabel="Recognized Key Number Label">
+                    <rect key="frame" x="435" y="406" width="43" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="43" id="793"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="796" userLabel="Recognized Hyerogliph Number Label">
+                    <rect key="frame" x="687" y="406" width="43" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="43" id="797"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" momentary="YES" translatesAutoresizingMaskIntoConstraints="NO" id="923" userLabel="Train Hyerogliph">
+                    <rect key="frame" x="554" y="463" width="161" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="161" id="2507"/>
+                    </constraints>
+                    <segments>
+                        <segment title="Верно"/>
+                        <segment title="Неверно"/>
+                    </segments>
+                    <connections>
+                        <action selector="getTeacherCorrection:" destination="-1" eventType="valueChanged" id="1268"/>
+                    </connections>
+                </segmentedControl>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" momentary="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1377" userLabel="Train Key">
+                    <rect key="frame" x="303" y="463" width="161" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="161" id="1853"/>
+                    </constraints>
+                    <segments>
+                        <segment title="Верно"/>
+                        <segment title="Неверно"/>
+                    </segments>
+                    <connections>
+                        <action selector="getTeacherCorrection:" destination="-1" eventType="valueChanged" id="1379"/>
+                    </connections>
+                </segmentedControl>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.30000001192092896" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="1947" userLabel="Train Coefficient">
+                    <rect key="frame" x="538" y="524" width="192" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="188" id="2509"/>
+                    </constraints>
+                    <color key="thumbTintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                    <connections>
+                        <action selector="sliderValueChanged:" destination="-1" eventType="valueChanged" id="1948"/>
+                    </connections>
+                </slider>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="1359">
+                    <rect key="frame" x="0.0" y="980" width="768" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem systemItem="play" id="2127">
+                            <connections>
+                                <action selector="recognizeButton:" destination="-1" id="2133"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="1367"/>
+                        <barButtonItem systemItem="camera" id="1360">
+                            <connections>
+                                <action selector="cameraButtonClicked:" destination="-1" id="1368"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" momentary="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1394" userLabel="Custom Hyerogliphs">
+                    <rect key="frame" x="303" y="531" width="161" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="2549"/>
+                    </constraints>
+                    <segments>
+                        <segment title="&lt;&lt;" enabled="NO"/>
+                        <segment title="Другие">
+                            <size key="contentOffset" width="1" height="0.0"/>
+                        </segment>
+                        <segment title=">>" enabled="NO"/>
+                    </segments>
+                    <connections>
+                        <action selector="customHyerogliphControl:" destination="-1" eventType="valueChanged" id="1468"/>
+                    </connections>
+                </segmentedControl>
+                <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="1667" userLabel="Key Image">
+                    <rect key="frame" x="526" y="861" width="100" height="100"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="1668"/>
+                        <constraint firstAttribute="height" constant="100" id="1669"/>
+                    </constraints>
+                </imageView>
+                <pageControl opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="1893">
+                    <rect key="frame" x="120" y="435" width="39" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <action selector="regionChanged:" destination="-1" eventType="valueChanged" id="1940"/>
+                        <action selector="regionChanged:" destination="-1" eventType="touchUpInside" id="2125"/>
+                    </connections>
+                </pageControl>
+                <pageControl opaque="NO" tag="20" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="1930">
+                    <rect key="frame" x="364" y="435" width="39" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <action selector="regionChanged:" destination="-1" eventType="valueChanged" id="1941"/>
+                        <action selector="regionChanged:" destination="-1" eventType="touchUpInside" id="2124"/>
+                    </connections>
+                </pageControl>
+                <slider opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="0.0" maxValue="500" translatesAutoresizingMaskIntoConstraints="NO" id="2083">
+                    <rect key="frame" x="43" y="524" width="193" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <action selector="sliderValueChanged:" destination="-1" eventType="valueChanged" id="2118"/>
+                    </connections>
+                </slider>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2088">
+                    <rect key="frame" x="242" y="524" width="29" height="42"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Шум" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2242">
+                    <rect key="frame" x="5" y="524" width="34" height="42"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="34" id="2296"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Кaff" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2251">
+                    <rect key="frame" x="5" y="467" width="42" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="2252"/>
+                        <constraint firstAttribute="width" constant="42" id="2276"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0.5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2144">
+                    <rect key="frame" x="242" y="467" width="29" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="29" id="2145"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <slider opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="2134">
+                    <rect key="frame" x="43" y="467" width="193" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <action selector="sliderValueChanged:" destination="-1" eventType="valueChanged" id="2299"/>
+                    </connections>
+                </slider>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2179">
+                    <rect key="frame" x="436" y="345" width="60" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2184">
+                    <rect key="frame" x="195" y="345" width="60" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="2199"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2211">
+                    <rect key="frame" x="195" y="329" width="60" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="2212"/>
+                        <constraint firstAttribute="height" constant="21" id="2213"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2221">
+                    <rect key="frame" x="436" y="329" width="60" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="2223"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <rect key="contentStretch" x="0.0" y="0.15000000000000002" width="1" height="1"/>
+            <constraints>
+                <constraint firstItem="105" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="112"/>
+                <constraint firstItem="163" firstAttribute="top" secondItem="2" secondAttribute="top" id="167"/>
+                <constraint firstItem="163" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="168"/>
+                <constraint firstItem="262" firstAttribute="centerX" secondItem="360" secondAttribute="centerX" id="1080"/>
+                <constraint firstItem="367" firstAttribute="trailing" secondItem="796" secondAttribute="trailing" id="1098"/>
+                <constraint firstItem="262" firstAttribute="centerY" secondItem="360" secondAttribute="centerY" id="1158"/>
+                <constraint firstItem="485" firstAttribute="top" secondItem="530" secondAttribute="bottom" constant="8" symbolic="YES" id="1337"/>
+                <constraint firstItem="525" firstAttribute="centerX" secondItem="503" secondAttribute="centerX" id="1342"/>
+                <constraint firstItem="525" firstAttribute="baseline" secondItem="530" secondAttribute="baseline" id="1343"/>
+                <constraint firstItem="503" firstAttribute="top" secondItem="525" secondAttribute="bottom" constant="8" symbolic="YES" id="1344"/>
+                <constraint firstItem="1359" firstAttribute="bottom" secondItem="2" secondAttribute="bottom" id="1362"/>
+                <constraint firstItem="1359" firstAttribute="trailing" secondItem="2" secondAttribute="trailing" id="1364"/>
+                <constraint firstItem="1359" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="1366"/>
+                <constraint firstItem="211" firstAttribute="baseline" secondItem="214" secondAttribute="baseline" id="1392"/>
+                <constraint firstItem="223" firstAttribute="baseline" secondItem="214" secondAttribute="baseline" id="1404"/>
+                <constraint firstItem="105" firstAttribute="trailing" secondItem="2" secondAttribute="trailing" id="1422"/>
+                <constraint firstItem="105" firstAttribute="top" secondItem="2" secondAttribute="top" constant="66" id="1423"/>
+                <constraint firstItem="163" firstAttribute="trailing" secondItem="2" secondAttribute="trailing" id="1448"/>
+                <constraint firstItem="503" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20" symbolic="YES" id="1635"/>
+                <constraint firstItem="4" firstAttribute="trailing" secondItem="211" secondAttribute="trailing" id="2016"/>
+                <constraint firstItem="923" firstAttribute="baseline" secondItem="1377" secondAttribute="baseline" id="2048"/>
+                <constraint firstAttribute="bottom" secondItem="503" secondAttribute="bottom" constant="60" id="2062"/>
+                <constraint firstItem="310" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="62" id="2107"/>
+                <constraint firstAttribute="trailing" secondItem="223" secondAttribute="trailing" constant="118" id="2115"/>
+                <constraint firstItem="785" firstAttribute="trailing" secondItem="360" secondAttribute="trailing" id="2202"/>
+                <constraint firstItem="2211" firstAttribute="trailing" secondItem="2184" secondAttribute="trailing" id="2217"/>
+                <constraint firstItem="2211" firstAttribute="top" secondItem="342" secondAttribute="top" id="2219"/>
+                <constraint firstItem="2211" firstAttribute="leading" secondItem="2184" secondAttribute="leading" id="2220"/>
+                <constraint firstItem="2221" firstAttribute="trailing" secondItem="2179" secondAttribute="trailing" id="2228"/>
+                <constraint firstItem="2221" firstAttribute="top" secondItem="360" secondAttribute="top" id="2230"/>
+                <constraint firstItem="2221" firstAttribute="leading" secondItem="2179" secondAttribute="leading" id="2231"/>
+                <constraint firstItem="1599" firstAttribute="top" secondItem="2" secondAttribute="top" constant="11" id="2241"/>
+                <constraint firstItem="2251" firstAttribute="leading" secondItem="2242" secondAttribute="leading" id="2255"/>
+                <constraint firstItem="342" firstAttribute="centerX" secondItem="4" secondAttribute="centerX" id="2300"/>
+                <constraint firstItem="1667" firstAttribute="centerX" secondItem="485" secondAttribute="centerX" id="2302"/>
+                <constraint firstItem="1667" firstAttribute="top" secondItem="485" secondAttribute="bottom" constant="8" symbolic="YES" id="2304"/>
+                <constraint firstAttribute="trailing" secondItem="485" secondAttribute="trailing" constant="17" id="2313"/>
+                <constraint firstItem="2251" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="5" id="2320"/>
+                <constraint firstItem="2211" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="195" id="2339"/>
+                <constraint firstItem="1548" firstAttribute="trailing" secondItem="2" secondAttribute="trailing" id="2364"/>
+                <constraint firstItem="2184" firstAttribute="top" secondItem="2" secondAttribute="top" constant="345" id="2384"/>
+                <constraint firstItem="262" firstAttribute="bottom" secondItem="4" secondAttribute="bottom" id="2388"/>
+                <constraint firstItem="262" firstAttribute="top" secondItem="4" secondAttribute="top" id="2389"/>
+                <constraint firstItem="2221" firstAttribute="baseline" secondItem="2211" secondAttribute="baseline" id="2391"/>
+                <constraint firstItem="360" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="286" id="2392"/>
+                <constraint firstItem="316" firstAttribute="baseline" secondItem="310" secondAttribute="baseline" id="2393"/>
+                <constraint firstItem="785" firstAttribute="top" secondItem="2" secondAttribute="top" constant="406" id="2394"/>
+                <constraint firstItem="2179" firstAttribute="top" secondItem="2184" secondAttribute="top" id="2396"/>
+                <constraint firstItem="2179" firstAttribute="baseline" secondItem="2184" secondAttribute="baseline" id="2397"/>
+                <constraint firstAttribute="trailing" secondItem="2221" secondAttribute="trailing" constant="272" id="2400"/>
+                <constraint firstItem="360" firstAttribute="top" secondItem="2211" secondAttribute="top" id="2401"/>
+                <constraint firstItem="316" firstAttribute="top" secondItem="310" secondAttribute="top" id="2404"/>
+                <constraint firstItem="323" firstAttribute="top" secondItem="316" secondAttribute="top" id="2407"/>
+                <constraint firstAttribute="trailing" secondItem="530" secondAttribute="trailing" constant="48" id="2411"/>
+                <constraint firstItem="796" firstAttribute="baseline" secondItem="785" secondAttribute="baseline" id="2412"/>
+                <constraint firstItem="33" firstAttribute="bottom" secondItem="262" secondAttribute="bottom" id="2413"/>
+                <constraint firstItem="33" firstAttribute="top" secondItem="262" secondAttribute="top" id="2415"/>
+                <constraint firstItem="367" firstAttribute="top" secondItem="2221" secondAttribute="top" id="2416"/>
+                <constraint firstItem="323" firstAttribute="centerX" secondItem="33" secondAttribute="centerX" id="2420"/>
+                <constraint firstItem="367" firstAttribute="top" secondItem="323" secondAttribute="bottom" constant="8" symbolic="YES" id="2421"/>
+                <constraint firstItem="367" firstAttribute="bottom" secondItem="342" secondAttribute="bottom" id="2422"/>
+                <constraint firstItem="1893" firstAttribute="top" secondItem="2" secondAttribute="top" constant="435" id="2424"/>
+                <constraint firstItem="1930" firstAttribute="top" secondItem="1893" secondAttribute="top" id="2426"/>
+                <constraint firstItem="289" firstAttribute="top" secondItem="2" secondAttribute="top" constant="371" id="2430"/>
+                <constraint firstItem="289" firstAttribute="leading" secondItem="342" secondAttribute="trailing" constant="8" symbolic="YES" id="2431"/>
+                <constraint firstItem="301" firstAttribute="centerY" secondItem="367" secondAttribute="centerY" id="2432"/>
+                <constraint firstItem="301" firstAttribute="leading" secondItem="360" secondAttribute="trailing" constant="8" symbolic="YES" id="2433"/>
+                <constraint firstItem="923" firstAttribute="centerX" secondItem="33" secondAttribute="centerX" id="2434"/>
+                <constraint firstItem="1377" firstAttribute="top" secondItem="2" secondAttribute="top" constant="463" id="2439"/>
+                <constraint firstItem="367" firstAttribute="centerX" secondItem="33" secondAttribute="centerX" id="2442"/>
+                <constraint firstItem="310" firstAttribute="top" secondItem="2" secondAttribute="top" constant="299" id="2444"/>
+                <constraint firstItem="2251" firstAttribute="baseline" secondItem="1377" secondAttribute="baseline" id="2454"/>
+                <constraint firstItem="2134" firstAttribute="leading" secondItem="342" secondAttribute="leading" id="2459"/>
+                <constraint firstItem="2251" firstAttribute="top" secondItem="2134" secondAttribute="top" id="2463"/>
+                <constraint firstItem="2144" firstAttribute="baseline" secondItem="2251" secondAttribute="baseline" id="2465"/>
+                <constraint firstItem="2144" firstAttribute="leading" secondItem="2134" secondAttribute="trailing" constant="8" symbolic="YES" id="2466"/>
+                <constraint firstItem="2144" firstAttribute="top" secondItem="2134" secondAttribute="top" id="2467"/>
+                <constraint firstItem="2144" firstAttribute="centerY" secondItem="1377" secondAttribute="centerY" id="2469"/>
+                <constraint firstItem="1599" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="53" id="2478"/>
+                <constraint firstItem="2083" firstAttribute="leading" secondItem="2134" secondAttribute="leading" id="2479"/>
+                <constraint firstItem="2088" firstAttribute="leading" secondItem="2144" secondAttribute="leading" id="2482"/>
+                <constraint firstItem="2088" firstAttribute="top" secondItem="2083" secondAttribute="top" id="2484"/>
+                <constraint firstItem="2088" firstAttribute="leading" secondItem="2083" secondAttribute="trailing" constant="8" symbolic="YES" id="2486"/>
+                <constraint firstItem="2088" firstAttribute="trailing" secondItem="2144" secondAttribute="trailing" id="2489"/>
+                <constraint firstItem="2242" firstAttribute="baseline" secondItem="2088" secondAttribute="baseline" id="2490"/>
+                <constraint firstItem="2242" firstAttribute="top" secondItem="2083" secondAttribute="top" id="2491"/>
+                <constraint firstItem="1377" firstAttribute="top" secondItem="923" secondAttribute="top" id="2495"/>
+                <constraint firstItem="342" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="45" id="2497"/>
+                <constraint firstItem="214" firstAttribute="top" secondItem="163" secondAttribute="bottom" id="2498"/>
+                <constraint firstItem="2134" firstAttribute="centerX" secondItem="1893" secondAttribute="centerX" id="2500"/>
+                <constraint firstItem="2144" firstAttribute="leading" secondItem="289" secondAttribute="leading" id="2501"/>
+                <constraint firstItem="1947" firstAttribute="centerX" secondItem="923" secondAttribute="centerX" id="2506"/>
+                <constraint firstAttribute="trailing" secondItem="1947" secondAttribute="trailing" constant="40" id="2508"/>
+                <constraint firstItem="1377" firstAttribute="centerX" secondItem="1930" secondAttribute="centerX" id="2512"/>
+                <constraint firstItem="316" firstAttribute="centerX" secondItem="105" secondAttribute="centerX" id="2514"/>
+                <constraint firstItem="316" firstAttribute="centerX" secondItem="1930" secondAttribute="centerX" id="2515"/>
+                <constraint firstItem="316" firstAttribute="leading" secondItem="1930" secondAttribute="leading" id="2516"/>
+                <constraint firstItem="214" firstAttribute="centerX" secondItem="262" secondAttribute="centerX" id="2517"/>
+                <constraint firstAttribute="bottom" secondItem="1394" secondAttribute="bottom" constant="464" id="2538"/>
+                <constraint firstItem="1394" firstAttribute="leading" secondItem="1377" secondAttribute="leading" id="2539"/>
+                <constraint firstItem="1394" firstAttribute="trailing" secondItem="1377" secondAttribute="trailing" id="2541"/>
+                <constraint firstItem="1394" firstAttribute="centerY" secondItem="2088" secondAttribute="centerY" id="2542"/>
+                <constraint firstItem="1947" firstAttribute="top" secondItem="2088" secondAttribute="top" id="2543"/>
+                <constraint firstAttribute="bottom" secondItem="1548" secondAttribute="bottom" constant="467" id="2546"/>
+                <constraint firstItem="1548" firstAttribute="top" secondItem="1947" secondAttribute="top" id="2547"/>
+                <constraint firstItem="1548" firstAttribute="bottom" secondItem="1947" secondAttribute="bottom" id="2548"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedToolbarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
+        </view>
+    </objects>
+</document>

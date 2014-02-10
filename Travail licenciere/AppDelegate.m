@@ -10,10 +10,45 @@
 
 #import "ViewController.h"
 
+#pragma mark - Настройки программы при запуске
+
+#define FAST_RECOGNITION YES
+#define GRADIENT_TEACHING NO
+#define REGIONS_METRICS YES
+#define TRAINING_WITH_TEACHER NO
+#define STATISTICS_COLLECTION_MODE YES
+
 @implementation AppDelegate
+
+//Настройки
+@synthesize fastRecognition = _fastRecognition;
+@synthesize gradientTeaching = _gradientTeaching;
+@synthesize trainingWithTeacher = _trainingWithTeacher;
+@synthesize regionsMetrics = _regionsMetrics;
+@synthesize statisticsCollection = _statisticsCollection;
+
+//Значения
+@synthesize regionSquareThresholdValue = _regionSquareThresholdValue;
+@synthesize trainCoefficient = _trainCoefficient;
+@synthesize formCoefficientAffection = _formCoefficientAffection;
+
+const double DEFAULT_TRAIN_COEFFICIENT = 0.18;
+const double DEFAULT_FORM_COEFFICIENT_AFFECTION = 0.15;
+const int REGIONS_SQUARE_THRESHOLD = 100;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    _fastRecognition = FAST_RECOGNITION;
+    _gradientTeaching = GRADIENT_TEACHING;
+    _trainingWithTeacher = TRAINING_WITH_TEACHER;
+    _regionsMetrics = REGIONS_METRICS;
+    _statisticsCollection = STATISTICS_COLLECTION_MODE;
+    
+    _regionSquareThresholdValue = REGIONS_SQUARE_THRESHOLD;
+    _trainCoefficient = DEFAULT_TRAIN_COEFFICIENT;
+    _formCoefficientAffection = DEFAULT_FORM_COEFFICIENT_AFFECTION;
+    
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
@@ -23,6 +58,7 @@
     }
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
